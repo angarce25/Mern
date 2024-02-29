@@ -11,7 +11,8 @@ app.use(express.json())
 app.use("/auth", authRoutes)
 app.use("/todos", todosRoutes )
 
+db()
+
 //puerto
 app.listen(3000), console.log("Se conecta al servidor");
 //conexión a la base de datos
-db()
