@@ -2,6 +2,7 @@ import express from "express";
 import { db } from './dataBase/db.js' 
 import todosRoutes from "./routes/routes.js"
 import authRoutes from "./routes/authRoutes.js"
+import "dotenv/config.js"
 
 const app = express();
 

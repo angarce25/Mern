@@ -45,7 +45,8 @@ export const Login = async (req, res) => {
         const token = jwt.sign({
             email: email, 
             role: user.role,
-        }, "codesecret");
+        },
+        process.env.JWT_SECRET);
 
         res.header("auth", token).json({ message: "Login successful", token });
     } catch (error) {
