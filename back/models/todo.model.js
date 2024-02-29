@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const todoSchema = mongoose.Schema({
     title: { type: String, required: true },
     task: { type: String, required: true },
-    type: { type: String, enum:["work", "school", "free"], required: true },
+    type: { type: String, enum:["work", "school", "free"]},
 }, { timestamps: true });
 
 
